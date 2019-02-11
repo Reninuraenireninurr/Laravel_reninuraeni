@@ -11,7 +11,7 @@
 		&times;
 	</button>
 </div>
-@elseif(session('result') == 'success')
+@elseif(session('result') == 'fail')
 <div class="alert alert-danger alert-dismissiable fade show">
 	<strong>Failed !</strong> Gagal diupdate.
 	<button type="button" class="close" data-dismiss="alert">
