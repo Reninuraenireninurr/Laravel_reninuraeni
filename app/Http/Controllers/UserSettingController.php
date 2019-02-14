@@ -41,7 +41,7 @@ class UserSettingController extends Controller
 
     	if($result){
     		return back()->with('result','success');
-    	}else{
+    	} else{
     		return back()->with('result','fail');
     	}
     }
