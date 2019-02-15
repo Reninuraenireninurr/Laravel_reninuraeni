@@ -4,6 +4,15 @@
 <h1>User <small class="text-muted">Tambah</small></h1>
 <hr>
 
+@if(session('result') == 'fail')
+<div class="alert alert-danger alert-dismissible fade show">
+	<strong>Failed!</strong>Gagal disimpan.
+	<button type="button" class="close" data-dismiss="alert">
+		&times;
+	</button>
+</div>
+@endif
+
 <div class="row">
 	<div class="col-md-6">
 		<form method="POST" action="{{ route('admin.user.add') }}">
@@ -64,8 +73,8 @@
 						<select class="form-control {{ $errors->has('akses')?'is-invalid':'' }}"
 						name="akses">
 							<option value="" {{ $val==""?'selected':'' }}>Pilih Akses Sebagai :</option>
-							<option value="operator" {{ $val=="operator"?'selected':'' }}>Operator</option>
 							<option value="admin" {{ $val=="admin"?'selected':'' }}>Administrator</option>
+							<option value="operator" {{ $val=="operator"?'selected':'' }}>Operator</option>
 						</select>	
 						@if($errors->has('akses'))
 						<div class="invalid-feedback">{{ $errors->first('akses') }}</div>
