@@ -59,8 +59,16 @@ class UserController extends Controller
         ])->validate();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return 'Fungsi Update';
 =======
+=======
+<<<<<<< HEAD
+        return 'Fungsi Update';
+=======
+=======
+>>>>>>> episode 18
+>>>>>>> episode 18
         if (!empty($req->password)) {
             $field = [
                 'name' =>$req->name,
@@ -83,6 +91,13 @@ class UserController extends Controller
         } else {
             return back()->with('result','fail');
         }
+<<<<<<< HEAD
 >>>>>>> eps17
+=======
+<<<<<<< HEAD
+>>>>>>> eps17
+=======
+>>>>>>> episode 18
+>>>>>>> episode 18
     }
 } 

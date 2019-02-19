@@ -10,7 +10,7 @@
 		 <li class="nav-item">
           <a class="nav-link" href="{{route('admin.user')}}">
             <i class="fas fa-fw fa-users"></i>
-            <span>User</span>
+            <span>User </span>
           </a>
         </li>
         @endif
