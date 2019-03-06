@@ -16,6 +16,7 @@ class KategoriController extends Controller
     	$data = Kategori::where('nama_kategori','like',"%{$req->keyword}%")->paginate(10);
 
     	return view('admin.pages.kategori.daftar',['data'=>$data]);
+<<<<<<< HEAD
     }
     public function add()
     {
@@ -24,6 +25,8 @@ class KategoriController extends Controller
     public function save(Request $req)
     {
     	return 'Fungsi Save';
+=======
+>>>>>>> 08d9f2ca7d1c796d392511d063bbb1f9bfd8fdac
 =======
     	return view('admin.pages.kategori.daftar');
 >>>>>>> 548bd0b1cd8c255c9947a32b0adb113a82e19bd0

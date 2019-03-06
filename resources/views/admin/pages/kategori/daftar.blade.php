@@ -6,7 +6,11 @@
 <<<<<<< HEAD
 <div class="row">
 	<div class="col-md-6 mb-3">
+<<<<<<< HEAD
 		<a href="{{route('admin.kategori.add')}}" class="btn btn-primary">[+] Tambah</a>
+=======
+		<a href="#" class="btn btn-primary">[+] Tambah</a>
+>>>>>>> 08d9f2ca7d1c796d392511d063bbb1f9bfd8fdac
 	</div>
 
 	<div class="col-md-6 mb-3">
