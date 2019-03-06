@@ -3,20 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-<<<<<<< HEAD
 use App\Kategori;
-=======
->>>>>>> 548bd0b1cd8c255c9947a32b0adb113a82e19bd0
 
 class KategoriController extends Controller
 {
     public function daftar(Request $req)
     {
-<<<<<<< HEAD
     	$data = Kategori::where('nama_kategori','like',"%{$req->keyword}%")->paginate(10);
 
     	return view('admin.pages.kategori.daftar',['data'=>$data]);
-<<<<<<< HEAD
     }
     public function add()
     {
@@ -24,11 +19,9 @@ class KategoriController extends Controller
     }
     public function save(Request $req)
     {
+        \Validator::make($req->all(),[
+            'kategori'=>'required|between:3,100|unique:kategori,nama_kategori',
+        ])->validate();
     	return 'Fungsi Save';
-=======
->>>>>>> 08d9f2ca7d1c796d392511d063bbb1f9bfd8fdac
-=======
-    	return view('admin.pages.kategori.daftar');
->>>>>>> 548bd0b1cd8c255c9947a32b0adb113a82e19bd0
     }
 }
