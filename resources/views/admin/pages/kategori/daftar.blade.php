@@ -3,6 +3,7 @@
 @section('content')
 <h1>Kategori</h1>
 <hr>
+<<<<<<< HEAD
 <div class="row">
 	<div class="col-md-6 mb-3">
 		<a href="#" class="btn btn-primary">[+] Tambah</a>
@@ -47,4 +48,6 @@
 	->links('vendor.pagination.bootstrap-4')
 }}
 
+=======
+>>>>>>> 548bd0b1cd8c255c9947a32b0adb113a82e19bd0
 @endsection
