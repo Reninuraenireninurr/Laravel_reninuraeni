@@ -45,6 +45,7 @@ class KategoriController extends Controller
 
     public function update(Request $req)
     {
+<<<<<<< HEAD
         \Validator::make($req->all(),[
                 'kategori'=>'required|between:3,100|unique:kategori,nama_kategori,'.$req->id,
     	])->validate();
@@ -58,5 +59,20 @@ class KategoriController extends Controller
     	} else {
     		return back()->with('result','fail');
     	}
+=======
+         \Validator::make($req->all(),[
+            'kategori'=>'required|between:3,100|unique:kategori,nama_kategori,'.$req->id,
+        ])->validate();
+
+       $result = Kategori::where('id',$req->id)
+                    ->update([
+                        'nama_kategori'=>$req->kategori,
+                    ]);
+        if($result){
+            return redirect()->route('admin.kategori')->with('result','update');
+        }else{
+            return back()->with('result','fail');
+        }
+>>>>>>> 69cfcdd215876c1c3e1d52ceabb3ff6de0e52489
     }
 }
