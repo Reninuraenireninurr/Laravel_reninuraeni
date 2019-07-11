@@ -19,6 +19,7 @@ class AksesAdmin
         if(Auth::user()->akses == 'admin'){
             return $next($request);
         }
+
         return abort(404);
     }
 }

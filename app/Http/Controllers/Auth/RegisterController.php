@@ -27,7 +27,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-   
+    
 
     /**
      * Create a new controller instance.
@@ -69,8 +69,8 @@ class RegisterController extends Controller
         ]);
     }
 
-        protected function redirectTo()
+       protected function redirectTo()
     {
-        return route('admin.home');
+       return route('admin.home');
     }
 }

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +11,6 @@
 
     <title>@yield('title') Tokap Admin</title>
     <link rel="icon" type="image/png" href="{{url('favicon.png')}}">
-
     <!-- Bootstrap core CSS-->
     <link href="{{url('theme-sbadmin/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
@@ -22,7 +20,6 @@
     <!-- Custom styles for this template-->
     <link href="{{url('theme-sbadmin/css/sb-admin.css')}}" rel="stylesheet">
     @stack('css')
-
   </head>
 
   <body id="page-top">
@@ -40,7 +37,7 @@
 
 
           <!-- Page Content -->
-          @yield('content')
+         @yield('content')
 
         </div>
         <!-- /.container-fluid -->
@@ -70,7 +67,7 @@
     <script src="{{url('theme-sbadmin/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="{{url('theme-sbadmin/js/sb-admin.min.js')}}"></script>
+    <script src="{{url('theme-sbadmin/js/sb-admin.min.js')}} "></script>
     <script type="text/javascript" src="{{url('theme-sbadmin/js/navbar-nav.js')}}"></script>
     @stack('js')
 

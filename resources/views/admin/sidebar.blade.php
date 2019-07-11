@@ -1,4 +1,4 @@
-      <ul class="sidebar navbar-nav">
+<ul class="sidebar navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="{{route('admin.home')}}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -6,20 +6,20 @@
           </a>
         </li>
 
-        @if(Auth::user()->akses == 'admin')
-		  <li class="nav-item">
+          @if(Auth::user()->akses == 'admin')
+          <li class="nav-item">
           <a class="nav-link" href="{{route('admin.user')}}">
             <i class="fas fa-fw fa-users"></i>
             <span>User</span>
           </a>
-        </li>
+         </li>
 
-        <li class="nav-item">
+           <li class="nav-item">
           <a class="nav-link" href="{{route('admin.kategori')}}">
             <i class="fas fa-fw fa-list"></i>
             <span>Kategori</span>
           </a>
-        </li>
+         </li>
         @endif
-
-      </ul>
+        
+ </ul>
