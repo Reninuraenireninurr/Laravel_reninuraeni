@@ -18,4 +18,15 @@ class ProdukController extends Controller
     	
     	return view('admin.pages.produk.daftar',['data'=>$data]);
     }
+
+    /*Fungsi Add/Tambah*/
+    public function add()
+    {
+        return view('admin.pages.produk.add');
+    } 
+    /*Fungsi Save/Simpan*/
+    public function save(Request $req)
+    {
+        return 'Fungsi Save';
+    }
 }
