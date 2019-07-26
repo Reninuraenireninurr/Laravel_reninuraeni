@@ -80,6 +80,7 @@
 						<select class="form-control {{ $errors->has('akses')?'is-invalid':'' }}" 
 						name="akses">
 						    <option value="" {{ $val==""?'selected':'' }}>Pilih Akses Sebagai :</option>
+							<option value="admin" {{ $val=="admin"?'selected':'' }}>Administrator</option>
 							<option value="operator" {{ $val=="operator"?'selected':'' }}>Operator</option>
 							<option value="admin" {{ $val=="admin"?'selected':'' }}>Administrator</option>
 						</select>

@@ -13,7 +13,9 @@
             <span>User</span>
           </a>
          </li>
+         @endif
 
+         @if(Auth::user()->akses == 'admin' || Auth::user()->akses == 'asisten')
            <li class="nav-item">
           <a class="nav-link" href="{{route('admin.kategori')}}">
             <i class="fas fa-fw fa-list"></i>
